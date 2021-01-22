@@ -1,5 +1,6 @@
 apt update
 apt upgrade -y
+apt install pv -y
 apt install python -y
 apt install python2 -y
 apt install neofetch -y
@@ -13,7 +14,7 @@ clear
 echo
 echo
 echo
-echo -e "           Setup Successfully....    " | lolcat
+echo -e "           Setup Successfully....    " | pv -qL 8 | lolcat
 sleep 3
 clear
 echo -e "         \033[33m  Restarting......"
